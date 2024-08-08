@@ -25,3 +25,39 @@ body {
     font-style: normal;
 }
 
+.container {
+    margin: 165px;
+    background-color: var(--light-grayish-blue);
+    
+    /* box-sizing: border-box; */
+}
+
+.big-box1{
+    width: 540px;
+    height: 280px;
+    background-color: var(--moderate-violet);
+}
+
+.small-box1{
+    width: 255px;
+    height: 280px;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.long-box{
+    width: 255px;
+    height: 585px;
+    background-color: var(--light-gray);
+}
+
+.big-box2{
+    width: 540px;
+    height: 280px;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.small-box2{
+    width: 255px;
+    height: 280px;
+    background-color: var(--light-gray);
+}
