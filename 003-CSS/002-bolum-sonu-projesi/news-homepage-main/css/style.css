@@ -38,7 +38,7 @@ body {
     font-weight: 800;
     font-style: normal; */
 
-    /* // <uniquifier>: Use a unique and descriptive class name */
+/* // <uniquifier>: Use a unique and descriptive class name */
 /* // <weight>: Use a value from 100 to 900 */
 
 /* .inter-font {
@@ -48,7 +48,7 @@ body {
   font-style: normal;
 } */
 
-
+/* NAV */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -70,14 +70,15 @@ nav ul {
     display: flex;
     gap: 15px;
     font-size: 18px;
-    
-}
 
+}
+/* NAV END */
+
+/* MIDDLE */
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-
 }
 
 .container section {
@@ -86,6 +87,24 @@ nav ul {
 
 aside {
     flex: 1;
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    padding: 0px 20px;
+}
+
+aside p {
+    color: var(--grayish-blue);
+}
+
+aside h2 {
+    color: var(--soft-orange);
+    font-size: 2.5rem;
+    padding-top: 10px;
+}
+
+.item {
+    margin: 50px 0px;
+    border-bottom: 1px solid var(--dark-grayish-blue);
 }
 
 article {
@@ -106,12 +125,15 @@ article {
     /* flex: 1; */
     font-size: 4rem;
     margin-top: 30px;
+    margin-bottom: 0;
 }
+
 .info2 {
     flex: 1;
     color: var(--dark-grayish-blue);
     font-size: 16px;
     line-height: 1.5;
+    padding: 15px;
 }
 
 .button-read {
@@ -130,4 +152,34 @@ article {
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 800;
+}
+
+/* MIDDLE END */
+
+/* FOOTER */
+
+
+.footer-container {
+    display: flex;    
+}
+
+.item-footer{
+    display: flex;   
+    flex: 1; 
+    padding:30px 0px;
+    max-height: 150px;
+}
+
+.content > * {
+    margin: 5px;
+    
+}
+.content > h2 {
+    color: var(--soft-red);
+    font-size: 2rem;
+}
+
+.item-footer img {
+    height:100px !important;
+    padding: 15px 30px 15px 0px;
 }
