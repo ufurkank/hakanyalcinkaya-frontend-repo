@@ -58,6 +58,53 @@ body {
     color: hsl(0, 96%, 18%);
 }
 
+/* Hamburger menü simgesi */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    /* Menü başlangıçta gizli */
+    flex-direction: column;
+}
+
+/* Menü açılınca */
+#menu-toggle:checked+.menu-icon+.navbar ul {
+    display: flex;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Daha büyük ekranlar için menü düzeni */
+@media (min-width: 768px) {
+    .navbar ul {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+    }
+
+    .menu-icon,
+    #menu-toggle {
+        display: none;
+        /* Daha büyük ekranlarda hamburger menüyü gizle */
+    }
+}
+
 nav {
     margin-top: 80px;
     margin-bottom: 30px;
@@ -70,8 +117,12 @@ nav ul {
     display: flex;
     gap: 15px;
     font-size: 18px;
-
 }
+
+.navbar ul {
+    padding: 0px;
+}
+
 /* NAV END */
 
 /* MIDDLE */
@@ -160,26 +211,28 @@ article {
 
 
 .footer-container {
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.item-footer{
-    display: flex;   
-    flex: 1; 
-    padding:30px 0px;
+.item-footer {
+    display: flex;
+    flex: 1;
+    padding: 30px 0px;
     max-height: 150px;
 }
 
-.content > * {
+.content>* {
     margin: 5px;
-    
+
 }
-.content > h2 {
+
+.content>h2 {
     color: var(--soft-red);
     font-size: 2rem;
 }
 
 .item-footer img {
-    height:100px !important;
+    height: 100px !important;
     padding: 15px 30px 15px 0px;
 }
