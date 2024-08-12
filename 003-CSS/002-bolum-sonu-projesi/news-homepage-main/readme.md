@@ -1,0 +1,1 @@
+https://ufurkank.github.io/hakanyalcinkaya-frontend-repo/003-CSS/002-bolum-sonu-projesi/news-homepage-main/
