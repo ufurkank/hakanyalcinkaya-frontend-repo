@@ -105,6 +105,18 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    body{
+        margin: auto 10px;
+        
+    }
+    .container{
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+}
+
 nav {
     margin-top: 80px;
     margin-bottom: 30px;
