@@ -18,7 +18,7 @@ p {
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: auto 150px;
+    margin: auto 150px 20px 150px;
 }
 
 /* .barlow-semi-condensed-regular {
@@ -52,6 +52,7 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 10px;
 }
 
 .attribution a {
