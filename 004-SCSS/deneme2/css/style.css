@@ -1,9 +1,8 @@
-.buton {
+.buton, .buyuk-buton {
   color: blue;
   font-size: 16px;
 }
 
 .buyuk-buton {
-  @extend .buton;
   font-size: 20px;
-}
+}/*# sourceMappingURL=style.css.map */
