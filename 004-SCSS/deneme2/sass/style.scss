@@ -1,4 +1,4 @@
-
+// .box-1'den .box-5'e kadar 5 farklı sınıf oluşturacak bir döngü
 @for $i from 1 through 5 {
   .box-#{$i} {
     width: 100px * $i;
