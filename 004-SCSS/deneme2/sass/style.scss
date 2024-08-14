@@ -1,9 +1,9 @@
-.buton {
-  color: blue;
-  font-size: 16px;
-}
 
-.buyuk-buton {
-  @extend .buton;
-  font-size: 20px;
+@for $i from 1 through 5 {
+  .box-#{$i} {
+    width: 100px * $i;
+    height: 100px * $i;
+    background-color: rgb(50 * $i, 100, 150);
+    margin: 10px;
+  }
 }
