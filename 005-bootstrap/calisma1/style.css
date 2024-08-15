@@ -1,0 +1,21 @@
+:root {
+    --green: #1ED760;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-green {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+/* carousel */
+
+/* carousel end */
