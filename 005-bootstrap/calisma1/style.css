@@ -16,6 +16,9 @@ body {
     background-color: var(--green);
 }
 
-/* carousel */
+.img-article {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
 
-/* carousel end */

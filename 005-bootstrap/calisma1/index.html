@@ -25,101 +25,235 @@
     </nav>
     <!-- header end -->
     <!-- nav -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary sticky-top">
         <div class="container btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-success" for="btnradio1">Radio 1</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
+                onclick="window.location.href='#a-1'">
+            <label class="btn btn-outline-success" for="btnradio1">Bob Moses</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-success" for="btnradio2">Radio 2</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                onclick="window.location.href='#a-2'">
+            <label class="btn btn-outline-success" for="btnradio2">RÜFÜS DU SOL</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-success" for="btnradio3">Radio 3</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                onclick="window.location.href='#a-3'">
+            <label class="btn btn-outline-success" for="btnradio3">Billie Eilish</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-            <label class="btn btn-outline-success" for="btnradio4">Radio 4</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+                onclick="window.location.href='#a-4'">
+            <label class="btn btn-outline-success" for="btnradio4">Imagine Dragons</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off"
+                onclick="window.location.href='#a-5'">
+            <label class="btn btn-outline-success" for="btnradio5">The Weeknd</label>
         </div>
     </nav>
+
 
     <!-- nav end -->
     <!-- main -->
     <main>
         <section>
-            <div class="mycarousel mx-auto ">
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
-                    <div class="cards">
-                        <label class="card" for="item-1" id="song-1">
-                            <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-                                alt="song">
-                        </label>
-                        <label class="card" for="item-2" id="song-2">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="song">
-                        </label>
-                        <label class="card" for="item-3" id="song-3">
-                            <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                                alt="song">
-                        </label>
-                    </div>
-                    <div class="player">
-                        <div class="upper-part">
-                            <div class="play-icon">
-                                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-                                    <defs />
-                                    <path d="M5 3l14 9-14 9V3z" />
-                                </svg>
-                            </div>
-                            <div class="info-area" id="test">
-                                <label class="song-info" id="song-info-1">
-                                    <div class="title">Bunker</div>
-                                    <div class="sub-line">
-                                        <div class="subtitle">Balthazar</div>
-                                        <div class="time">4.05</div>
-                                    </div>
-                                </label>
-                                <label class="song-info" id="song-info-2">
-                                    <div class="title">Words Remain</div>
-                                    <div class="sub-line">
-                                        <div class="subtitle">Moderator</div>
-                                        <div class="time">4.05</div>
-                                    </div>
-                                </label>
-                                <label class="song-info" id="song-info-3">
-                                    <div class="title">Falling Out</div>
-                                    <div class="sub-line">
-                                        <div class="subtitle">Otzeki</div>
-                                        <div class="time">4.05</div>
-                                    </div>
-                                </label>
-                            </div>
+            <div class="mycarousel mx-auto mt-4">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card-song" for="item-1" id="song-1">
+                        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO403O7u-default.jpg" alt="song"
+                            class="song-image">
+                    </label>
+                    <label class="card-song" for="item-2" id="song-2">
+                        <img src="https://i.pinimg.com/736x/41/e5/6f/41e56f461e76d9ad7f127678efdf8887.jpg" alt="song"
+                            class="song-image">
+                    </label>
+                    <label class="card-song" for="item-3" id="song-3">
+                        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3qQrNm-default.jpg" alt="song"
+                            class="song-image">
+                    </label>
+                </div>
+                <div class="player">
+                    <div class="upper-part">
+                        <div class="play-icon">
+                            <svg width="20" height="20" fill="#1ED760" stroke="#1ED760" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" class="feather feather-play"
+                                viewBox="0 0 24 24">
+                                <defs />
+                                <path d="M5 3l14 9-14 9V3z" />
+                            </svg>
                         </div>
-                        <div class="progress-bar">
-                            <span class="progress"></span>
+                        <div class="info-area" id="test">
+                            <label class="song-info" id="song-info-1">
+                                <div class="title">Bob Moses</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">Desire</div>
+                                    <div class="time">3.53</div>
+                                </div>
+                            </label>
+                            <label class="song-info" id="song-info-2">
+                                <div class="title">Billie Eilish</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">ilomilo</div>
+                                    <div class="time">4.03</div>
+                                </div>
+                            </label>
+                            <label class="song-info" id="song-info-3">
+                                <div class="title">RÜFÜS DU SOL</div>
+                                <div class="sub-line">
+                                    <div class="subtitle">Innerbloom</div>
+                                    <div class="time">4.15</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- article start -->
+        <article class="container" id="a-1">
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+                    <div class="card mb-3">
+                        <img src="https://www.dominomusic.com/res/QVEV/1200_1200/BobMoses_PC_LucasMK_300dpi.jpg"
+                            class="card-img-top img-fluid img-article" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Bob Moses</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <article>
-            Lorem ipsum dolor sit amet.
         </article>
 
-        <article>
-            Illum, fuga! Eum, culpa maxime?
+        <article class="container" id="a-2">
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+                    <div class="card mb-3">
+                        <img src="https://dynamicmedia.livenationinternational.com/Media/k/v/z/ac67cb0a-bcc9-4d5f-b559-fac6ba4d31a4.jpg"
+                            class="card-img-top img-fluid img-article" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">RÜFÜS DU SOL</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <article>
-            Fuga sit aliquid eligendi totam!
+        <article class="container" id="a-3">
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+                    <div class="card mb-3">
+                        <img src="https://cdn.britannica.com/03/214803-050-6809BA1C/American-singer-songwriter-Billie-Eilish-2020.jpg"
+                            class="card-img-top img-fluid img-article" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Billie Eilish</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="container" id="a-4">
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+                    <div class="card mb-3">
+                        <img src="https://www.dergy.com/wp-content/uploads/2022/11/imagine-dragons.jpg"
+                            class="card-img-top img-fluid img-article" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Imagine Dragons</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="container" id="a-5">
+            <div class="row">
+                <div class="col-sm-10 mx-auto">
+                    <div class="card mb-3">
+                        <img src="https://variety.com/wp-content/uploads/2023/11/The-Weeknd-2.jpg"
+                            class="card-img-top img-fluid img-article" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">The Weeknd</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </main>
     <!-- main end -->
 
     <!-- footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <div class="mb-3">
+                    <a class="navbar-brand d-flex align-items-center mx-auto" href="#">
+                        <img src="https://www.vectorlogo.zone/logos/spotify/spotify-ar21.svg" alt="Logo"
+                            class="d-inline-block align-text-top ">
+                        <div class="text-green">favori sanatçılar</div>
+                    </a>
+                </div>
+                <p class="text-green">© 2024</p>
+            </div>
 
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
     <!-- footer end -->
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
