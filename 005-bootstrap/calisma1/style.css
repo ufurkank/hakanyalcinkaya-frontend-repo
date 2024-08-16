@@ -22,3 +22,17 @@ body {
     width: 100%;
 }
 
+.card {
+    border-color: var(--green);
+}
+.card-title, .card-text, .title {
+    color: #27ae60 !important;
+}
+
+small, .subtitle {
+    color: var(--green) !important;
+}
+
+.song-info {
+    color: #27ae60;
+}
