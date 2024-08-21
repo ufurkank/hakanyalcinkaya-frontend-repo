@@ -70,5 +70,3 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,video
 
-node_modules/
-vendor/
