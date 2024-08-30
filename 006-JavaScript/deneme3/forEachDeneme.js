@@ -55,3 +55,7 @@ numbers4.forEach((number4)=> {
 // Bir dizideki her kelimenin uzunluğunu konsola yazdırın.
 
 const words = ["JavaScript", "React", "CSS", "HTML"];
+
+words.forEach( (word) => {
+    console.log("Alıştırma GPT-5: Uzunluklar:", word.length)
+})
