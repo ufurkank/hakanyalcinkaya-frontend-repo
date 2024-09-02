@@ -28,10 +28,10 @@
     </div>
 
     <script>
-        const colorInput = document.querySelector("#color") //color inputunu seçtik.
-
+        
         const btn = document.querySelector("#save")
         btn.addEventListener("click", () => {
+            const colorInput = document.querySelector("#color") //color inputunu seçtik.
             localStorage.setItem("bgColor", colorInput.value)
             // Buraya kadar seçilen rengi, butona basınca locale gönderdik.
         })
