@@ -42,9 +42,47 @@ hexColorForm.addEventListener("submit", (event) => {
     })
 
     localStorageColors.push(colors)
+    colorCards.append(addColorPalette(colors)) // append edildi
 
     localStorage.setItem("colors", JSON.stringify(localStorageColors))
     hexColorForm.reset()
 })
 
 // Buraya kadar localStorage'a attık. 
+
+const colorCards = document.querySelector("#colorCards")
+
+if (localStorageColors.length) {
+    localStorageColors.forEach (colors => {
+        colorCards.append ( addColorPalette(colors) )
+    })
+}
+
+function addColorPalette(items) {
+    /* <div class="row gap-3">
+        <div class="col-sm card" style="background-color: blueviolet;"></div>
+        <div class="col-sm card" style="background-color: rgb(17, 145, 10);"></div>
+    </div> */
+    const rowElement = document.createElement("div")
+    rowElement.classList.add("row", "gap-3", "my-3")
+
+    items.forEach(item => {
+        const cardItem = document.createElement("div")
+        cardItem.classList.add("col-sm", "card", "colorCard")
+        cardItem.style.backgroundColor = item
+        rowElement.append(cardItem)
+    })
+
+    return rowElement
+}
+
+// Buraya kadar cardlar bgcolor eklenerek append edildi
+
+const colorCardItems = document.querySelectorAll(".colorCard")
+
+colorCardItems.forEach(colorCard => {
+    colorCard.addEventListener("click", () => {
+        navigator.clipboard.writeText(colorCard.style.backgroundColor)
+        alert(`Renk Kopyalandı`)
+    })
+})
