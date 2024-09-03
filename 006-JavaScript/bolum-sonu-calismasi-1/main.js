@@ -7,7 +7,7 @@ let counter = 1
 
 addNew.addEventListener("click", () => {
     counter += 1
-    hexInputContainer.append( newHexColorInput(counter) )
+    hexInputContainer.append(newHexColorInput(counter))
 })
 
 function newHexColorInput(itemCount) {
@@ -25,12 +25,26 @@ id="colorInput-${itemCount}"
 name="color-${itemCount}"
 >
 `
-return newDivElement
+    return newDivElement
 }
 
 hexInputContainer.append(newHexColorInput(counter))
 
-hexColorForm.addEventListener("submit", event => {
+hexColorForm.addEventListener("submit", (event) => {
     event.preventDefault()
+
+    let localStorageColors = localStorage.getItem("colors") ? JSON.parse(localStorage.getItem("colors")) : []
+
+    let colors = []
+    Array.from(event.target.elements).forEach(item => {
+        if (item.type === "text")
+            colors.push(item.value)
+    })
+
+    localStorageColors.push(colors)
+
+    localStorage.setItem("colors", JSON.stringify(localStorageColors))
+    hexColorForm.reset()
 })
 
+// Buraya kadar localStorage'a attık. 
