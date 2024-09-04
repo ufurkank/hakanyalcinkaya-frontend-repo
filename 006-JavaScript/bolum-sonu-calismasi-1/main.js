@@ -59,18 +59,22 @@ if (localStorageColors.length) {
 }
 
 function addColorPalette(items) {
+    /* <div class="row gap-3">
+        <div class="col-sm card" style="background-color: blueviolet;"></div>
+        <div class="col-sm card" style="background-color: rgb(17, 145, 10);"></div>
+    </div> */
     const rowElement = document.createElement("div")
     rowElement.classList.add("row", "gap-3", "my-3")
 
     items.forEach(item => {
         const cardItem = document.createElement("div")
-        cardItem.classList.add("col-sm", "card", "colorCard")
+        cardItem.classList.add("col-sm", "card")
         cardItem.style.backgroundColor = item
 
         // Burada event listener ekliyoruz
         cardItem.addEventListener("click", () => {
-            navigator.clipboard.writeText(cardItem.style.backgroundColor)
-            alert(`Renk Kopyalandı`)
+            navigator.clipboard.writeText(item)
+            alert(`${item} Renk Kopyalandı`)
         })
 
         rowElement.append(cardItem)
